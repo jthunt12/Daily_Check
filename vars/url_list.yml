@@ -10,5 +10,5 @@ handshake_list:
   - url: "www.ibm.com"
     port: 443
     
-  - url: "www.amazon.com"
+  - url: "www.vmware.com"
     port: 443
