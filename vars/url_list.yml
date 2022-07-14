@@ -1,0 +1,14 @@
+---
+handshake_list:
+
+  # - url: "<DOMAIN_NAME>"
+  #   port: "<port>"
+
+  - url: "www.redhat.com"
+    port: 443
+
+  - url: "www.ibm.com"
+    port: 443
+    
+  - url: "www.amazon.com"
+    port: 443

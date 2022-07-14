@@ -1,0 +1,9 @@
+---
+mail_list:
+
+  # - email: "<First_Name> <Last_Name> <email_address@domain.com>"
+
+  - email: "Dwight Schrute <dwight.schrute@dmifflin.com>"
+  - email: "Jim Halpert <jim.halpert@dmifflin.com>"
+  - email: "Michael Scott <michael.scott@dmifflin.com>"
+  - email: "Pam Beesly <pam.beesly@dmifflin.com>"
