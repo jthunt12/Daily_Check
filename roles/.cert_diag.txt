@@ -1,0 +1,13 @@
+Daily Check Summary
+ - NAME/ URL: www.redhat.com
+   EXPIRATION: 2023-09-15 23:59:59 --> 332 days
+   ISSUER: DigiCert SHA2 Extended Validation Server CA
+
+ - NAME/ URL: www.ibm.com
+   EXPIRATION: 2023-08-25 23:59:59 --> 311 days
+   ISSUER: DigiCert TLS RSA SHA256 2020 CA1
+
+ - NAME/ URL: www.vmware.com
+   EXPIRATION: 2023-05-23 23:59:59 --> 217 days
+   ISSUER: DigiCert TLS RSA SHA256 2020 CA1
+

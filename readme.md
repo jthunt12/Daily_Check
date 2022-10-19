@@ -1,6 +1,6 @@
 # Daily_Check -- SSL Certificate Audit Playbook 
 
-Daily_Check is a playbook that preforms a handshake with a list of URL's through specified ports. An email is then sent out to all recipients informing them of a certificates expiration date and how many days are remaining till expiration.
+Cert_Check is a playbook that performs a handshake with a list of URLs through specified ports.
 
 # community.crypto
 
@@ -20,20 +20,25 @@ Check:
 ```
 ansible-galaxy collection list
 ```
+Vars are stored in ~/roles/vars/main.yml
 
-# Arguments
+By default the cert info is printed in "~/roles/.cert_diag.txt" this will need to be updated in the playbook depending on where the playbook is being ran.
 
-This playbook assumes that you are running from the following dir/ and assumes url_list.yml & mail_list.yml are in the vars/ folder.
+# Example output from ".cert_diag.txt"
 
 ```
-/opt/ansible/daily_check/--> ../vars/url_list.yml
-                             ../vars/mail_list.yml
+Daily Check Summary
+
+ - NAME/ URL: www.redhat.com
+   EXPIRATION: 2023-09-15 23:59:59 --> 332 days
+   ISSUER: DigiCert SHA2 Extended Validation Server CA
+
+ - NAME/ URL: www.ibm.com
+   EXPIRATION: 2023-08-25 23:59:59 --> 311 days
+   ISSUER: DigiCert TLS RSA SHA256 2020 CA1
+
+ - NAME/ URL: www.vmware.com
+   EXPIRATION: 2023-05-23 23:59:59 --> 217 days
+   ISSUER: DigiCert TLS RSA SHA256 2020 CA1
+
 ```
-
-** This part of the playbook can be modified by editing lines 12, 19, 34, 47, 61, & 66.
-
-# Purpose
-
-Once the playbook is ran either manually or through scripted processes, recipients will receive an email with the following outline.
-
-![Capture](https://user-images.githubusercontent.com/36526335/179010910-d35da6a8-84ba-47ec-a81c-09c73e6320ac.JPG)
