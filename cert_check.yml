@@ -1,11 +1,6 @@
-# For installation run: 
-## ansible-galaxy collection install community.crypto
-
 ---
 - name: URL SSL Certificate Audit
   hosts: localhost
-  vars_files: 
-    - "vars/url_list.yml"
-    - "vars/mail_list.yml"
+
   roles:
     - cert_info
